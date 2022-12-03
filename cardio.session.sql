@@ -1,6 +1,7 @@
+SELECT * from tb_cardio;
 
+SELECT Age, Gender FROM tb_cardio
+ORDER BY Age, Gender
+WHEN LIMIT 50;
 
--- SELECT Age, Gender FROM tb_cardio
--- ORDER BY Age, Gender;
-
--- SELECT * from tb_cardio;
+SELECT * from tb_cardio;
