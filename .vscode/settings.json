@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 100,
+            "driver": "SQLite",
+            "name": "cardio",
+            "database": "${workspaceFolder:Projetc-cardio}/src/data/cardio.db"
+        }
+    ]
+}
