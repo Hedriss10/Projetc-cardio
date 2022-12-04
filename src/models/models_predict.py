@@ -1,7 +1,13 @@
 import os 
 import sys
 import pandas as pd 
+import dataframe_image 
 import sqlalchemy
+import matplotlib.pyplot as plt 
+
+
+from pandas.plotting import table
+
 
 
 
@@ -24,6 +30,35 @@ sql_query = pd.read_sql_query(
     conetion
     
 )
-
 df =  pd.DataFrame(  sql_query )
-print(df.head())
+
+# Mostrando o data set Geral
+def dataset_all():
+    dataframeone = df
+    ax = plt.subplot(111, frame_on=True)
+    ax.xaxis.set_visible(False)  
+    ax.yaxis.set_visible(False) 
+
+    table(ax, df)
+    
+    plt.savefig('dataframe.png')
+    
+    
+    
+    
+
+
+dataset_all()
+
+
+
+# Descrição completa com média e desvio padrão
+def describe_dataset():
+    analyzer = df.describe().T
+    df_std = pd.DataFrame(analyzer)
+    
+    print(df_std)
+
+    
+    
+# describe_dataset()

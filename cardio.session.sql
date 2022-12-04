@@ -1,3 +1,5 @@
+--  sessions do sql para manipular as querys
+
 SELECT * from tb_cardio;
 
 SELECT Age, Gender FROM tb_cardio
