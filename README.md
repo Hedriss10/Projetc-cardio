@@ -22,6 +22,83 @@ Milhas - esperadas para correr**  <br>
 
 <hr>
 
+## Análise de dados:
+
+### Descrição estatistica sobre a base de dados
+    
+<div>
+    <img src='figures/descrição.png'>
+</div>
+
+
+### Coloração da base de dados
+<div>
+    <img src='figures/coloração.png'>
+</div>
+
+
+### Produtos mais usados
+
+<div>
+    <img src='figures/produtos.png'>
+</div>
+
+
+### Renda 
+
+<div>
+    <img src='figures/renda.png'>
+</div>
+
+
+### Uso
+
+<div>
+    <img src='figures/uso.png'>
+</div>
+
+
+# Uso 
+<div>
+    <img src='figures/milhas.png'>
+</div>
+
+
+
+# Idade 
+
+<div>
+    <img src='figures/idade.png'>
+</div>
+
+
+# Ginastica 
+
+<div>
+    <img src='figures/ginastica.png'>
+</div>
+
+
+# Genero 
+
+<div>
+    <img src='figures/genero.png'>
+</div>
+
+
+# Estado Civil 
+<div>
+    <img src='figures/estado-civil.png'>
+</div>
+
+
+
+# Estado Civil 
+<div>
+    <img src='figures/education.png'>
+</div>
+
+
 
 
 

@@ -43,10 +43,6 @@ def dataset_all():
     
     plt.savefig('dataframe.png')
     
-    
-    
-    
-
 
 dataset_all()
 
