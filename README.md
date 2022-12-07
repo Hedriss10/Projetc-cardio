@@ -91,7 +91,7 @@ O modelo 'TM798' tem os maiores valores de observações em Educação e Renda d
 
  *Pairplot do dataframe*
 
-## Observação de segmento dos produtos 
+# Observação de segmento dos produtos 
 
 <img src='docs/out/output-observação.png'>
 
@@ -123,6 +123,79 @@ O modelo 'TM798' tem os maiores valores de observações em Educação e Renda d
 * A idade é uma distribuição assimétrica à direita.
 
 
+## Educação
+
+<img src='docs/out/output-education.png'>
+
+*Em média, os clientes têm no mínimo 12 anos e no máximo 18 anos de escolaridade, com valores discrepantes variando até 21 anos.
+O IQR está entre 14 a 16 anos; 16 anos sendo a qualificação mais alta.
+Não há clientes com 13,17 anos de escolaridade.
+A educação é distorcida para a direita.*
+
+
+
+## Frequência de uso
+
+<img src='docs/out/output-usage.png'>
+
+*Em média, o número mínimo de dias em que a esteira é usada 2 dias/semana
+Um grande número de clientes usa a esteira por 3 dias/semana
+Um número significativo deles usou o produto por 4 dias/semana
+Os outliers indicam que há consideravelmente poucos clientes que usam a esteira por mais de 6 dias/semana.
+O uso é distorcido para a direita.*
+
+
+
+## Frequência da ginástica
+
+<img src='docs/out/output-fitnes.png'>
+
+
+*A pontuação de aptidão auto-avaliada dos clientes varia de 'inadequada' (classificação 2) a 'muito apta' (classificação 5)
+Existem outliers para 'muito impróprio' (classificação 1)
+O número máximo de clientes classificou seu nível de condicionamento físico como 3
+Um punhado deles deu o máximo de 5
+A aptidão é desviada para a direita (Média = 3,31, Mediana = 3)*
+
+
+## Frequência de renda
+
+<img src='docs/out/output-icome.png'>
+
+* O valor mínimo da renda média anual do cliente é de cerca de 30 mil, enquanto o máximo é de cerca de 77 mil, com valores discrepantes variando até 104 mil ou mais.
+* O IQR varia entre 43k e 58k.
+* A renda é desviada para a direita.
+
+
+## Frequência de milhas esperadas para rodar por semana
+
+<img src='docs/out/output-miles.png'>
+
+
+* O número mínimo de milhas esperadas é de cerca de 21 milhas/semana e o máximo é de cerca de 180 milhas/semana.
+Os outliers variam até cerca de 360 milhas/semana.
+Em média, o maior número de milhas percorridas/semana é de cerca de 43 milhas.
+Milhas/semana é desviada para a direita.
+
+<hr>
+
+# Análise Bivariada de Dados Numéricos
+
+
+## 1. Age x Usage 
+
+<img src='docs/out/output-linear-berividas.png'>
+
+
+*Clientes de 40 a 43 anos têm o uso máximo por semana
+Há uma queda acentuada no uso por clientes na faixa dos 30 anos, após o que o uso médio por semana aumenta gradualmente.
+Clientes na faixa dos 40 anos usam a esteira de 3 a 4 dias por semana
+Considerando que os clientes entre 40 e 50 anos usam a esteira consistentemente por apenas 3 dias/semana.
+A idade geral não parece afetar drasticamente o uso da esteira.*
+
+
+
+
 <p>
-    Data Scient <a>Hedris</a>
+    Data Scient <a href=''>Hedris</a>
 </p>
