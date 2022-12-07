@@ -6,9 +6,13 @@
 *este conjunto de dados contém informações de compra de esteira do cliente*
 
 
-<hr>
 
-### Banco de dados
+
+
+# Estrutura da base de dados
+
+<img src='docs/Figures/data-structure.png'>
+
 **Campos de dados: <br>
 Produto - o modelo não. da passadeira  <br>
 Idade - no nº de anos, do cliente  <br>
@@ -19,118 +23,104 @@ Uso - Avg. # vezes que o cliente deseja usar a esteira toda semana  <br>
 Fitness - Pontuação de condicionamento físico auto-avaliado do cliente (5 - muito apto, 1 - muito inadequado)  <br>
 Renda - do cliente  <br> 
 Milhas - esperadas para correr**  <br>
-
 <hr>
 
-## Análise de dados:
-
-### Descrição estatistica sobre a base de dados
-    
-<div>
-    <img src='figures/descrição.png'>
-</div>
+## Descrição Estatística
+-------
+<img src='docs/Figures/describe.png'>
 
 
-### Coloração da base de dados
-<div>
-    <img src='figures/coloração.png'>
-</div>
+* Os cliente variam de 18 a 50 anos de idade.
+* A idade a renda do cliente são distorcidas á direita pois a média é maior que a mediana.
+* A escolaridade média dos clientes é de 15,6 anos.
+O uso máximo da esteira/semana é de 7 dias, enquanto o mínimo é de apenas 2 dias.
+* Os valores do 1º, 2º e 3º quartil são os mesmos para 
+uso e condicionamento físico.
+* A diferença entre o 3º quartlie e os valores máximos da corrida de milhas indica um número significativo de outliers
 
 
-### Produtos mais usados
+## Descrição do produto vendido
+<img src='docs/Figures/descricao-produtos.png'>
 
-<div>
-    <img src='figures/produtos.png'>
-</div>
-
-
-### Renda 
-
-<div>
-    <img src='figures/renda.png'>
-</div>
+**Existem 3 Modelos de Esteira diferentes nas observações.
+O número do modelo TM195 tem o maior número de observações (80).
+Das 180 observações, 104 são do sexo masculino e as 76 restantes são do sexo feminino.
+Foram feitas 107 observações em clientes casados.**
 
 
-### Uso
+## Quantidade e análise dos produtos 
 
-<div>
-    <img src='figures/uso.png'>
-</div>
+**Análise dos produtos mínimos com pequena escala.**
 
+<img src='docs/Figures/minimo-produto.png'>
 
-# Uso 
-<div>
-    <img src='figures/milhas.png'>
-</div>
+**121 / 5.000
+Resultados de tradução
+Dentre todos os valores mínimos, o modelo de número 'TM798' apresenta valores maiores em todas as colunas em relação aos outros dois modelos.**
 
+**Análise maxíma dos produtos com pequena escala.**
 
+<img src='docs/Figures/maximo-produto.png'>
 
-# Idade 
+**O modelo 'TM195' tem a idade máxima do cliente de 50 anos; também a mais baixa entre as milhas máximas percorridas.
+O modelo 'TM798' tem os maiores valores de observações em Educação e Renda dos clientes; também o maior uso/semana, juntamente com as milhas percorridas e a pontuação de condicionamento físico**
 
-<div>
-    <img src='figures/idade.png'>
-</div>
+**Desvio padrão em base dos produtos.**
 
+<img src='docs/Figures/desvio.png'>
 
-# Ginastica 
-
-<div>
-    <img src='figures/ginastica.png'>
-</div>
-
-
-# Genero 
-
-<div>
-    <img src='figures/genero.png'>
-</div>
-
-
-# Estado Civil 
-<div>
-    <img src='figures/estado-civil.png'>
-</div>
+* Renda e milhas têm maior desvio da média
+* Uso e aptidão têm o menor desvio da média
 
 
 
-# Estado Civil 
-<div>
-    <img src='figures/education.png'>
-</div>
+## Análisando as relações entre as variáveis númericas
+
+<img src='docs/out/output.png'>
+
+* Uso e milhas (muito forte)
+* Miles e Fitness (muito forte)
+* Uso e condicionamento físico (forte)
+* Educação e renda (forte)
+* Milhas e receita
+* Aptidão e renda
+* Uso e receita
+* Idade e renda
+
+<img src='docs/out/output-paiplot.png' >
+
+ *Pairplot do dataframe*
+
+## Observação de segmento dos produtos 
+
+<img src='docs/out/output-observação.png'>
+
+* O modelo 'TM195' tem um máximo de 44,4% do * total de observações
+
+* O modelo 'TM498' tem 33,3% do total de  observações  
+
+* O modelo 'TM798' tem o mínimo de 22,2% do total de observações feitas.
+
+## Gênero por observação de ambos sexos
+
+<img src='docs/out/output-gender.png'>
+
+* As observações são compostas por 57,8% de clientes Masculinos e 42,2% de Clientes Femininos.
+
+## Estado Civil
+
+<img src='docs/out/output-maritalstatus.png'>
+
+* Cerca de 59,4% dos clientes são casados e 40,6% dos clientes são solteiros.
+
+## Idade
+
+<img src='docs/out/output-age.png'>
 
 
-
-
-
-
-## Estrutura do projeto
-------------------
-    ├── LICENSE
-    ├── README.md        <- The top-level README for developers using this project.
-    ├── docs
-    │   ├── figures     <- Figuras gráficas 
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── src                <- Source code for use in this project-cardio.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   │
-    │   ├── models   <- Scripts para retorno de cálculos matemáticos  
-    │   │   ├── model_predict.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │   │    └── visualize.py
-    │   │
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
------------------
-
+* A idade mínima dos clientes é 18 e a máxima é 46 com outliers variando até 50.
+* A faixa interquartil (IQR) está entre 24 e 33 anos.
+* A idade é uma distribuição assimétrica à direita.
 
 
 <p>
